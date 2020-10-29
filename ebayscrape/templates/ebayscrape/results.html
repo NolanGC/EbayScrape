@@ -1,0 +1,17 @@
+<h1>RESULTS</h1>
+
+<style>
+div {
+    white-space: pre-wrap;
+}
+</style>
+
+<div>
+{{output}}                                          
+</div>
+
+<br>
+
+<form action="{% url 'ebayscrape:index'  %}">
+    <input type="submit" value="Analyze a new user" />
+</form>

@@ -1,0 +1,40 @@
+<body>
+
+<style>
+div {
+    white-space: pre-wrap;
+}
+</style>
+<h2>Ebay Scrape</h2>
+
+<form action="/results/">
+{% csrf_token %}
+  Seller Name:<br>
+  <input type="text" name="seller_id" value="">
+  <br>
+  Keyword:<br>
+  <input type="text" name="kwd" value="">
+  <br>
+  Keyword Variations:<br>
+  <input type="text" name="kwd_vars" value="">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>About: This tool performs an advanced search
+and calculates the total revenue a specific account made selling a particular type of item.</p>
+<br>
+<p>
+EXAMPLE
+</p>
+<div>
+Seller Name: timetogo-58
+Keyword: OtterBox
+Keyword Variations: OtterBox, Otter Box, otterbox, otter box, Otterbox, otterBox, Otter box, otter Box
+</div>
+<br>
+<p>
+Note: Only items whose listing title contains at least one of the keyword variations will be included.
+</p>
+
+</body>
